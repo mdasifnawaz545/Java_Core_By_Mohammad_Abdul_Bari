@@ -1,0 +1,21 @@
+import java.lang.*;
+
+class Var
+{
+public static void main(String args[])
+{
+byte b=45;
+short s=786;
+int i =786;
+float f=786.09f;
+double pi=3.14159;
+char c='A';
+
+System.out.println(b);
+System.out.println(s);
+System.out.println(i);
+System.out.println(f);
+System.out.println(pi);
+System.out.println(c);
+}
+}
