@@ -6,9 +6,9 @@ class ColourCircle extends Frame{
     int x=0,y=0;
     public ColourCircle (){
         super("Mouse Pointer Circle and Color");
-        addMouseListener(new MouseAdapter() {
+        addMouseMotionListener(new MouseAdapter() {
             @Override
-            public void mouseClicked(MouseEvent e) {
+            public void mouseMoved(MouseEvent e) {
                 x=e.getX();
                 y=e.getY();
                 repaint();
@@ -16,7 +16,10 @@ class ColourCircle extends Frame{
         });
     }
     public void paint(Graphics g){
-        g.drawOval(x,y,50,50);
+        g.setColor(Color.blue);
+//        g.fillOval(x,y,50,50);
+        g.setFont(new Font("Noteworthy",Font.BOLD,30));
+        g.drawString("Salaam",x,y);
     }
 }
 
