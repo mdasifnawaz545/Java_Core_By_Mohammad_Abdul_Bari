@@ -1,6 +1,8 @@
 import java.awt.*;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 class Card extends Frame implements ItemListener {
     Button b1,b2,b3;
@@ -53,6 +55,13 @@ class Card extends Frame implements ItemListener {
 
         c1.addItemListener(this);
         c2.addItemListener(this);
+
+
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e){
+                System.exit(0);
+            }
+        });
 
     }
     public void itemStateChanged(ItemEvent e){
