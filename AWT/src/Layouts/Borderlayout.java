@@ -36,6 +36,9 @@ class BLayout extends Frame {
 }
 
 public class Borderlayout {
+    public static final Object CENTER = null;
+    public static Object SOUTH;
+
     public  static void main(String args[]){
         BLayout L=new BLayout();
         L.setSize(500,500);

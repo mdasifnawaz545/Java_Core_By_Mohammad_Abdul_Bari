@@ -5,10 +5,10 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 //Do it using Ananyomous Class.
 class HandleWindowEvent extends WindowAdapter {
-//
-//    public void windowClosing(WindowEvent m) {
-//        System.exit(0);
-//    }
+
+   public void windowClosing(WindowEvent m) {
+       System.exit(0);
+   }
 }
 
 
@@ -17,11 +17,7 @@ class Wind extends Frame{
     public Wind(){
         super("Adapter Class");
 
-        addWindowListener(new HandleWindowEvent(){
-            public void windowClosing(WindowEvent e) {
-                System.exit(0);
-            }
-        });
+        addWindowListener(new HandleWindowEvent());
 
     }
 }
