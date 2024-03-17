@@ -1,5 +1,7 @@
 package Layouts;
 
-public class Flowlayout {
+import java.awt.LayoutManager;
+
+public class Flowlayout implements LayoutManager {
     
 }
