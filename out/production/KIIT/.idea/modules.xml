@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AWT/AWT.iml" filepath="$PROJECT_DIR$/AWT/AWT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFxClass/JavaFxClass.iml" filepath="$PROJECT_DIR$/JavaFxClass/JavaFxClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/KIIT.iml" filepath="$PROJECT_DIR$/KIIT.iml" />
     </modules>
   </component>

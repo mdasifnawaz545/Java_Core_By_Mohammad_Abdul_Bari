@@ -17,7 +17,7 @@ class MyFrame extends Frame{
     Button b;
     public MyFrame(){
         super("Different Event Handling");
-        setLayout(new FlowLayout());
+//        setLayout(new FlowLayout());
         t=new TextField(20);
         b=new Button("Click to Increase Count");
         t.setText("   "+count);
