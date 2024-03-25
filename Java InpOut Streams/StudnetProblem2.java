@@ -8,9 +8,11 @@ public class StudnetProblem2 {
         FileInputStream fis1 = new FileInputStream("Source.txt");
         FileInputStream fis2 = new FileInputStream("Source2.txt");
         SequenceInputStream sqi = new SequenceInputStream(fis1, fis2);
-        int b;
-        while ((b = sqi.read()) != -1) {
-            fos.write(b);
-        }
+        // int b;
+        byte by[]=new byte[sqi.available()];
+        sqi.read(by);
+        // while ((b = sqi.read()) != -1) {
+            fos.write(by);
+        // }
     }
 }

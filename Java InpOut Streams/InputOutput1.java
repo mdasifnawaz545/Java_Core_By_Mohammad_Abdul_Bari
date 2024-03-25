@@ -6,9 +6,9 @@ public class InputOutput1 {
         try (FileOutputStream fos = new FileOutputStream("Text.txt")) {
             String str = "MOHAMMAD ASIF NAWAZ IS A GOOD BOY";
             byte b[] = str.getBytes();
-            for (byte x : b) {
-                fos.write(x);
-            }
+            // for (byte x : b) {
+                fos.write(b);
+            // }
         } catch (IOException e) {
             System.out.println(e);
         }

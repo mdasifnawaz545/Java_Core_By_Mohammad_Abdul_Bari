@@ -12,7 +12,7 @@ class Student {
     }
 }
 
-public class InstanceStoreFile {
+public class InstanceStoreFile1 {
     public static void main(String args[]) {
         // For Inseting the data/Object of the student into the file
 
