@@ -18,7 +18,7 @@ import javax.swing.event.ChangeListener;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import Layouts.Flowlayout;
+import java.awt.*;
 
 class DemoFrame extends JFrame implements ListSelectionListener, ActionListener, ChangeListener {
     JComboBox cmb;

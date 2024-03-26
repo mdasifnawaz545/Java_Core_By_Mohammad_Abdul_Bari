@@ -1,41 +1,48 @@
-package JavaSwing;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPasswordField;
-import javax.swing.JTextField;
-
-import Layouts.Flowlayout;
-
+import javax.swing.*;
 import java.awt.*;
+import java.awt.event.TextEvent;
+import java.awt.event.TextListener;
+import java.text.DateFormat;
+import java.text.NumberFormat;
+import java.text.SimpleDateFormat;
+import java.util.Locale;
+import javax.swing.text.NumberFormatter;
 
-class FrameNumberOne extends JFrame {
-    JLabel label1, label2;
-    JTextField textField1;
-    JPasswordField passwordField1;
-    JButton button;
+class MyTextField extends JFrame {
 
-    public FrameNumberOne() {
-        label1 = new JLabel("Username");
-        label1 = new JLabel("Password");
-        textField1 = new JTextField(20);
-        passwordField1 = new JPasswordField(20);
-        JButton b = new JButton("Submit");
-        setLayout(new Flowlayout());
-        add(label1);
-        add(textField1);
-        add(label2);
-        add(passwordField1);
-        add(button);
+    JTextField jf;
+    JTextArea ja;
+    JLabel jl;
+    JLabel l1, l2;
+    JTextField tf1;
+    JPasswordField jp1;
+    JButton b1;
+    JFormattedTextField jft;
+
+    public MyTextField() {
+        super("My TextField");
+        setLayout(new FlowLayout());
+        tf1 = new JTextField(20);
+        jp1 = new JPasswordField(20);
+        l1 = new JLabel("Username");
+        l2 = new JLabel("Password");
+        b1 = new JButton("Submit");
+        setLayout(new FlowLayout());
+        add(l1);
+        add(tf1);
+        add(l2);
+        add(jp1);
+        add(b1);
 
     }
+
 }
 
 public class FrameOne {
     public static void main(String args[]) {
-        FrameNumberOne f = new FrameNumberOne();
-        f.setSize(500, 500);
-        f.setVisible(true);
+        MyTextField m = new MyTextField();
+        m.setSize(250, 300);
+        m.setVisible(true);
+        m.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
