@@ -10,7 +10,7 @@ class Lists extends Frame implements ItemListener, ActionListener {
     Label l2;
     Choice c;
     TextArea ta;
-    public Lists(){
+    public Lists(){ 
         super("List Item");
         setLayout(new FlowLayout());
         l= new List(7,true);
