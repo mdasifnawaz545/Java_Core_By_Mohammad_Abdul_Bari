@@ -14,13 +14,13 @@ class MyDirectory extends JFrame {
         DefaultMutableTreeNode root = new DefaultMutableTreeNode("C:\\Users\\KIIT");
         File f = new File("C:\\Users\\KIIT");
         for (File x : f.listFiles()) {
-            if (x.isDirectory()) {
-                DefaultMutableTreeNode temp = new DefaultMutableTreeNode(x.getName());
-                for (File y : x.listFiles()) {
-                    temp.add(new DefaultMutableTreeNode(y.getName()));
-                }
-                root.add(temp);
-            } else
+            // if (x.isDirectory()) {
+            //     DefaultMutableTreeNode temp = new DefaultMutableTreeNode(x.getName());
+            //     for (File y : x.listFiles()) {
+            //         temp.add(new DefaultMutableTreeNode(y.getName()));
+            //     }
+            //     root.add(temp);
+            // } else
                 root.add(new DefaultMutableTreeNode(x.getName()));
         }
         tree = new JTree(root);
